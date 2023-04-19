@@ -8,6 +8,8 @@
  */
 package ch14;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -30,6 +32,7 @@ public class MileageCalculatorNoConversion extends Application {
     private String altMileage = "Kilometers";
     private String altCapacity = "Liters";
     private String altResult = "L/100KM";
+    private String[] MPGConv = { "Miles", "Kilometer" };
     
     // create UI components split by type
     private Button btnCalc = new Button("Calculate");
@@ -45,8 +48,6 @@ public class MileageCalculatorNoConversion extends Application {
     private TextField tfResult = new TextField(defaultCalc);
     
     private ComboBox<String> cbo = new ComboBox<>(); // Task 1
-	
-    private ToggleGroup tgConv = new ToggleGroup();
     
     private GridPane mainPane = new GridPane();
     
@@ -105,7 +106,7 @@ public class MileageCalculatorNoConversion extends Application {
      * This needs to be separate to avoid converting when
      * the conversion is not necessary
      */
-    private void changeLabels() {
+    private void changeLabels(int index) {
     	// distinguish between L/100KM and MPG
     	if (cbo.getValue() == "Kilometer" && lblCapacity.getText().equals(defaultCapacity)) {
         	// update labels
