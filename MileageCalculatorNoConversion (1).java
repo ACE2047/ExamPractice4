@@ -85,17 +85,15 @@ public class MileageCalculatorNoConversion extends Application {
         mainPane.add(btnCalc, 1, 5);
         
         // register action handlers
-        btnCalc.setOnAction(e -> calcMileage());
-        tfDistance.setOnAction(e -> calcMileage());
-        tfCapacity.setOnAction(e -> calcMileage());
-        tfResult.setOnAction(e -> calcMileage());
-        rbKPL.setOnAction(e -> changeLabels());
-        rbMPG.setOnAction(e -> changeLabels());     
-        btnReset.setOnAction(e -> resetForm());
-        
+	btnCalc.setOnAction(e -> calcMileage());
+	tfDistance.setOnAction(e -> calcMileage());
+	tfCapacity.setOnAction(e -> calcMileage());
+	tfResult.setOnAction(e -> calcMileage());
+	cbo.setOnAction(e -> changeLabels(items.indexOf(cbo.getValue())));
+	btnReset.setOnAction(e -> resetForm());
+	    
         // create a scene and place it in the stage
         Scene scene = new Scene(mainPane); 
-        
         // set and show stage
         primaryStage.setTitle("Mileage Calculator"); 
         primaryStage.setScene(scene); 
