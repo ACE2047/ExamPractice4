@@ -50,11 +50,8 @@ public class MileageCalculatorNoConversion extends Application {
     
     private GridPane mainPane = new GridPane();
     
-    public void start(Stage primaryStage) {   	
-    	// set toggle group for RadioButtons
-    	rbMPG.setToggleGroup(tgConv);
-    	rbKPL.setToggleGroup(tgConv);
-    	
+    public void start(Stage primaryStage) {   
+	    
         // set preferences for UI components
         tfDistance.setMaxWidth(txtWidth);
         tfCapacity.setMaxWidth(txtWidth);
