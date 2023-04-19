@@ -76,8 +76,6 @@ public class MileageCalculatorNoConversion extends Application {
         
         // add items to mainPane
         mainPane.add(lblEffType, 0, 0);
-        mainPane.add(rbMPG, 0, 1);
-        mainPane.add(rbKPL, 1, 1);
         mainPane.add(lblDistance, 0, 2);
         mainPane.add(tfDistance, 1, 2);
         mainPane.add(lblCapacity, 0, 3);
