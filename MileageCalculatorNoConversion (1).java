@@ -69,6 +69,10 @@ public class MileageCalculatorNoConversion extends Application {
         mainPane.setPadding(new Insets(10.0));
         mainPane.setHgap(txtWidth/2.0);
         mainPane.setVgap(txtWidth/12.0);
+	    
+	// add items to mainPane
+	mainPane.add(lblEffType, 0, 0);
+	mainPane.add(cbo, 0, 1);
         
         // add items to mainPane
         mainPane.add(lblEffType, 0, 0);
