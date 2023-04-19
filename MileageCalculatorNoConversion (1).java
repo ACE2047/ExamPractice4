@@ -162,6 +162,7 @@ public class MileageCalculatorNoConversion extends Application {
         lblCapacity.setText(defaultCapacity);
     	lblDistance.setText(defaultMileage);
     	lblResult.setText(defaultResult);
+	cbo.setValue(defaultMileage);
     }
 	
 	
