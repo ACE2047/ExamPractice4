@@ -60,7 +60,10 @@ public class MileageCalculatorNoConversion extends Application {
         tfCapacity.setMaxWidth(txtWidth);
         tfResult.setMaxWidth(txtWidth);
         tfResult.setEditable(false);
-        rbMPG.setSelected(true);
+	 
+        ObservableList<String> items = FXCollections.observableArrayList(MPGConv); // Task 2 and 3
+	cbo.getItems().addAll(items);
+	cbo.setValue(defaultMileage);
         
         // create a main grid pane to hold items
         mainPane.setPadding(new Insets(10.0));
