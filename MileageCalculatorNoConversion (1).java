@@ -1,9 +1,9 @@
 /**
  * File: csci1302/ch16/MileageCalculator.java
  * Package: ch16
- * @author Christopher Williams
- * Created on: Apr 12, 2017
- * Last Modified: Apr 15, 2019
+ * @author Lavardo Miller
+ * Created on: Apr 18, 2023
+ * Last Modified: Apr 18, 2023
  * Description:  
  */
 package ch14;
@@ -44,8 +44,8 @@ public class MileageCalculatorNoConversion extends Application {
     private TextField tfCapacity = new TextField(defaultEntry);
     private TextField tfResult = new TextField(defaultCalc);
     
-    private RadioButton rbMPG = new RadioButton(defaultResult); //
-    private RadioButton rbKPL = new RadioButton(altResult); //
+    private ComboBox<String> cbo = new ComboBox<>(); // Task 1
+	
     private ToggleGroup tgConv = new ToggleGroup();
     
     private GridPane mainPane = new GridPane();
