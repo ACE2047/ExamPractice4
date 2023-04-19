@@ -1,7 +1,7 @@
 /**
  * File: csci1302/ch16/MileageCalculator.java
  * Package: ch14
- * @author Lavardo Miller
+ * @author Lavardo Miller and Akshar Patel
  * Created on: Apr 18, 2023
  * Last Modified: Apr 18, 2023
  * Description:  
